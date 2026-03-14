@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nexus Crypto Dashboard</title>
+
+<style>
+
+body{
+background:#020b14;
+font-family:Arial, Helvetica, sans-serif;
+color:#9fe9ff;
+margin:0;
+padding:20px;
+}
+
+/* TOP STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin-bottom:15px;
+}
+
+.stat-box{
+background:#061824;
+border:1px solid #0c3b4f;
+padding:15px;
+border-radius:6px;
+box-shadow:0 0 10px #001e2b;
+}
+
+.stat-box h4{
+margin:0;
+font-size:12px;
+color:#4cdfff;
+letter-spacing:1px;
+}
+
+.stat-box h2{
+margin:5px 0 0 0;
+font-size:22px;
+color:#00f7ff;
+}
+
+/* TICKER */
+
+.ticker{
+background:#03131c;
+border:1px solid #0c3b4f;
+padding:8px;
+display:flex;
+gap:20px;
+font-size:13px;
+overflow:hidden;
+margin-bottom:15px;
+}
+
+/* GRID */
+
+.main-grid{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:15px;
+}
+
+/* PANELS */
+
+.panel{
+background:#061824;
+border:1px solid #0c3b4f;
+border-radius:6px;
+padding:12px;
+margin-bottom:15px;
+}
+
+.panel h3{
+margin-top:0;
+font-size:14px;
+color:#00eaff;
+}
+
+/* CHART */
+
+.chart{
+height:220px;
+background:linear-gradient(#021018,#051f2c);
+border:1px solid #0c3b4f;
+border-radius:4px;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+font-size:13px;
+}
+
+th{
+text-align:left;
+padding:8px;
+color:#00eaff;
+border-bottom:1px solid #0c3b4f;
+}
+
+td{
+padding:8px;
+border-bottom:1px solid #082a38;
+}
+
+.green{
+color:#00ff9c;
+}
+
+.red{
+color:#ff4b6e;
+}
+
+/* LIST */
+
+ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+li{
+padding:6px 0;
+border-bottom:1px solid #082a38;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- STATS -->
+
+<div class="stats">
+
+<div class="stat-box">
+<h4>GLOBAL MARKET CAP</h4>
+<h2>$2.49T</h2>
+</div>
+
+<div class="stat-box">
+<h4>24H VOLUME</h4>
+<h2>$130B</h2>
+</div>
+
+<div class="stat-box">
+<h4>BTC DOMINANCE</h4>
+<h2>56.8%</h2>
+</div>
+
+<div class="stat-box">
+<h4>ACTIVE ASSETS</h4>
+<h2>18,194</h2>
+</div>
+
+</div>
+
+<!-- TICKER -->
+
+<div class="ticker">
+<span>BTC $70,673 <span class="red">-0.3%</span></span>
+<span>ETH $2,687 <span class="red">-1.2%</span></span>
+<span>BNB $654 <span class="red">-0.6%</span></span>
+<span>XRP $1.40 <span class="green">+0.8%</span></span>
+<span>SOL $88 <span class="green">+2.1%</span></span>
+</div>
+
+<div class="main-grid">
+
+<!-- LEFT -->
+
+<div>
+
+<div class="panel">
+<h3>BTC/USD PRICE CHART</h3>
+<div class="chart"></div>
+</div>
+
+<div class="panel">
+
+<h3>MARKET OVERVIEW</h3>
+
+<table>
+
+<thead>
+<tr>
+<th>#</th>
+<th>Asset</th>
+<th>Price</th>
+<th>24H</th>
+<th>Market Cap</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>Bitcoin</td>
+<td>$70,673</td>
+<td class="red">-0.3%</td>
+<td>$1.4T</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Ethereum</td>
+<td>$2,687</td>
+<td class="red">-1.2%</td>
+<td>$325B</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Tether</td>
+<td>$1.00</td>
+<td class="green">+0.01%</td>
+<td>$110B</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>BNB</td>
+<td>$654</td>
+<td class="red">-0.6%</td>
+<td>$89B</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div>
+
+<div class="panel">
+
+<h3>GLOBAL CRYPTO NEWS</h3>
+
+<ul>
+<li>FBI Investigating Malware in Steam PC Games</li>
+<li>Trump Meme Coin Price Surges</li>
+<li>Kraken SPAC Could Target $10B</li>
+<li>Billionaire Investor Bullish on Stablecoins</li>
+</ul>
+
+</div>
+
+<div class="panel">
+
+<h3>TOP GAINERS</h3>
+
+<ul>
+<li class="green">THO +8.6%</li>
+<li class="green">CET +2.5%</li>
+<li class="green">M +1.9%</li>
+<li class="green">WLF +2.1%</li>
+</ul>
+
+</div>
+
+<div class="panel">
+
+<h3>FEAR & GREED INDEX</h3>
+<h1 style="color:#ff3b6b;">16</h1>
+<p>Extreme Fear</p>
+
+</div>
+
+<div class="panel">
+
+<h3>TRENDING NOW</h3>
+
+<ul>
+<li>BTC</li>
+<li>TRUMP</li>
+<li>PENGU</li>
+<li>PI</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
